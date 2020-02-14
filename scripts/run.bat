@@ -11,6 +11,10 @@
 cd ..
 
 set GOPATH="%CD%\dep"
-set GOBIN="%USERPROFILE%\go\bin"
+set GOBIN=%USERPROFILE%\go\bin
+
+:: You need to set up the path variables too (above) if you want
+:: to use remote package online.
+go get "github.com/jeanphorn/log4go"
 
 go run main.go
